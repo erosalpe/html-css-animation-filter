@@ -90,3 +90,36 @@
     animation-timing-function: ease-in;
 }
 
+
+
+
+
+@keyframes boxtop {
+    from {
+        position: absolute;
+        left: 10%;
+      }
+      to {
+        position: absolute;
+        left: 60%;
+      }
+  }
+
+.ex-12-top-white{
+    animation: boxtop 1s infinite alternate ease-in-out;
+}
+
+
+@keyframes boxbot {
+    from {
+        position: absolute;
+        right: 20%;
+      }
+      to {
+        position: absolute;
+        right: 60%;
+      }
+  }
+.ex-12-bottom-white {
+    animation: boxbot 1s infinite alternate ease-in-out;
+}
