@@ -73,3 +73,20 @@
     animation: rotation 2s infinite linear;
 }
 
+@keyframes exa {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(-270deg);
+      }
+  }
+
+.ex-11-icon:hover {
+    animation-name: exa;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
