@@ -133,7 +133,7 @@
   }
 
 .ex-13-top-white{
-    animation: boxtoptotal 5s infinite ease-out;
+    animation: boxtoptotal 5s infinite linear;
     /* border: 1px solid red; */
 }
 
@@ -146,6 +146,6 @@
   }
 
 .ex-13-bottom-white{
-    animation: boxbottotal 5s infinite ease-out;
+    animation: boxbottotal 5s infinite linear;
     /* border: 1px solid red; */
 }
