@@ -124,13 +124,28 @@
 
 
 
-@keyframes boxtop {
-    from {
-        position: absolute;
-        left: 10%;
-      }
-      to {
-        position: absolute;
-        left: 60%;
-      }
+@keyframes boxtoptotal {
+    0%   {top: -30%; left: -10%;}
+    25%  {top: -30%; left: 99%}
+    50%  {top: 100%; left: 99%;}
+    75%  {top: 100%; left: -10%;}
+    100% {top: -30%; left: -10%;}
   }
+
+.ex-13-top-white{
+    animation: boxtoptotal 5s infinite ease-out;
+    /* border: 1px solid red; */
+}
+
+@keyframes boxbottotal {
+    0%   {top: 100%; left: 100%;}
+    25%  {top: 100%; left: -10%}
+    50%  {top: -30%; left: -10%;}
+    75%  {top: -30%; left: 100%;}
+    100% {top: 100%; left: 100%;}
+  }
+
+.ex-13-bottom-white{
+    animation: boxbottotal 5s infinite ease-out;
+    /* border: 1px solid red; */
+}
