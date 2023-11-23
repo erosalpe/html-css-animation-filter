@@ -1,0 +1,131 @@
+body{
+    background-color: black;
+}
+.container{
+    width: 500px;
+    height: 800px;;
+    background-color: rgb(0, 0, 12);
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.container img:first-child{
+    display: block;
+    width: 15%;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+.container img:nth-child(2){
+    display: block;
+    width: 500px;
+    position: absolute;
+    bottom: 0;
+    filter: grayscale(90%);
+}
+
+.container img:nth-child(3){
+    display: block;
+    width: 100px;
+    position: absolute;
+    bottom: 400px;
+    transform: rotate(15deg);
+    filter: grayscale(90%);
+}
+
+@keyframes ufogo {
+    from  {bottom: 400px; left: 0%;}
+    to  {bottom: 400px; left: 80%; transform: rotate(-15deg);}
+  }
+
+  .container img:nth-child(3){
+    animation: ufogo 4s alternate infinite;
+}
+
+.container img:nth-child(4){
+    display: block;
+    width: 50px;
+    position: absolute;
+    top: -50px;
+    right: 50px;
+}
+
+.container img:nth-child(7){
+    display: block;
+    width: 50px;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    z-index: -1;
+}
+
+@keyframes meteora2 {
+    0% {top: -50px; left: -50;}
+    20%  {top: 400px; left: 500px;}
+    100% {top: 400px; left: 500px;}
+  }
+
+  .container img:nth-child(7){
+    animation: meteora2 6s infinite;
+    animation-delay: 5s;
+}
+
+
+
+@keyframes meteora {
+    0% {top: -50px; right: 70px;}
+    20%  {top: 60px; right: -70px;}
+    100% {top: 60px; right: -70px;}
+  }
+
+  .container img:nth-child(4){
+    animation: meteora 6s infinite;
+}
+
+.container img:nth-child(5){
+    display: block;
+    width: 40px;
+    left: 10px;
+    position: absolute;
+    bottom: 100px;
+    z-index: -1;
+}
+
+.container img:nth-child(6){
+    display: block;
+    width: 40px;
+    right: 0;
+    position: absolute;
+    bottom: 120px;
+    z-index: -1;
+}
+
+
+@keyframes alien {
+    from  {bottom: 100px;}
+    to  {bottom: 125px;}
+  }
+
+.container img:nth-child(5){
+    animation: alien 3s alternate infinite;
+}
+
+@keyframes alien2 {
+    from  {bottom: 120px;}
+    to  {bottom: 140px;}
+  }
+.container img:nth-child(6){
+    animation: alien2 3s alternate infinite;
+}
+
+
+.container img:nth-child(8){
+    display: block;
+    width: 15%;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    opacity: 0.5;
+}
