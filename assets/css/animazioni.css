@@ -32,6 +32,17 @@
 }
 
 .ex-6-img:hover{
-    filter: grayscale(100);
+    filter: grayscale(100%);
+}
+
+.ex-7-img:hover{
+    filter: grayscale(100%);
+    transition: 3s;
+}
+
+.ex-8-img:hover{
+    filter: saturate(130%);
+    filter: contrast(130%);
+    border-radius: 50px;
     transition: 3s;
 }
