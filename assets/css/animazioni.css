@@ -46,3 +46,30 @@
     border-radius: 50px;
     transition: 3s;
 }
+
+.ex-9-img:hover{
+    scale: 1.5;
+    filter: saturate(130%);
+    filter: contrast(130%);
+    border-radius: 50px;
+    transition: 3s;
+}
+
+
+
+
+
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.ex-10-icon {
+    animation: rotation 2s infinite linear;
+}
+
